@@ -1,3 +1,25 @@
 body {
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
+
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./extends.scss";
+
+@import "./container.scss";
+@import "./logo.scss";
+@import "./icon.scss";
+@import "./button.scss";
+@import "./form-field.scss";
+
+@import "./page.scss";
+@import "./header.scss";
+@import "./menu.scss";
+@import "./about.scss";
+@import "./details.scss";
+@import "./detail.scss";
+@import "./compare.scss";
+@import "./bike.scss";
+@import "./contact-us.scss";
+@import "./footer.scss";

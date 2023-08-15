@@ -1,0 +1,238 @@
+.container {
+  padding-inline: 20px; }
+  @media (min-width: 750px) {
+    .container {
+      padding-inline: 72px; } }
+  @media (min-width: 1260px) {
+    .container {
+      max-width: 1075px;
+      margin-inline: auto;
+      padding-inline: 120px; } }
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif; }
+
+.main {
+  background-color: aliceblue; }
+  .main__content {
+    display: grid;
+    row-gap: 96px;
+    padding-block: 96px; }
+    @media (min-width: 750px) {
+      .main__content {
+        padding-block: 120px;
+        row-gap: 120px; } }
+
+.header {
+  background-image: url(/bose-header-img.36bacc42.svg);
+  background-size: cover;
+  background-position: center; }
+  .header__content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  .header__waves {
+    height: 57px;
+    width: 48px;
+    margin-bottom: 16px;
+    background-image: url(/Sound-waves.ce5274a5.svg);
+    background-size: cover; }
+    @media (min-width: 750px) {
+      .header__waves {
+        width: 64px;
+        height: 76px;
+        margin-bottom: 40px; } }
+    @media (min-width: 1260px) {
+      .header__waves {
+        margin-bottom: 32px; } }
+  .header__title {
+    margin: 0;
+    font-style: italic;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: -1.5px; }
+  .header__bottom {
+    padding-bottom: 40px; }
+    @media (min-width: 750px) {
+      .header__bottom {
+        padding-bottom: 64px; } }
+
+.menu {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #e5e5e5;
+  font-weight: 700;
+  text-transform: uppercase; }
+  .menu__top {
+    margin-bottom: 32px; }
+    @media (min-width: 750px) {
+      .menu__top {
+        margin-bottom: 0; } }
+  .menu__nav {
+    margin-bottom: 40px; }
+
+.section-title {
+  margin: 0;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 32px;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -1.5px; }
+  @media (min-width: 750px) {
+    .section-title {
+      margin-bottom: 64px;
+      font-size: 40px; } }
+  @media (min-width: 1260px) {
+    .section-title {
+      font-size: 48px; } }
+  .section-title--align--left {
+    text-align: left; }
+
+.recommended__products {
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  row-gap: 40px; }
+  @media (min-width: 750px) {
+    .recommended__products {
+      --columns: 6;
+      column-gap: 24px; } }
+  @media (min-width: 1260px) {
+    .recommended__products {
+      --columns: 12; } }
+
+.recommended__product {
+  grid-column: 1 / -1; }
+  @media (min-width: 750px) {
+    .recommended__product {
+      grid-column: 2 / -2; } }
+  @media (min-width: 1260px) {
+    .recommended__product {
+      grid-column: span 4; } }
+
+.product__photo {
+  width: 100%; }
+
+.top-bar {
+  padding-block: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  @media (min-width: 750px) {
+    .top-bar {
+      padding-block: 64px; } }
+  .top-bar__icons {
+    display: flex;
+    gap: 25px; }
+  .top-bar__logo-link {
+    display: flex; }
+  .top-bar__logo {
+    height: 16px;
+    transition: transform 0.3s; }
+    .top-bar__logo:hover {
+      transform: scale(1.2); }
+    @media (min-width: 750px) {
+      .top-bar__logo {
+        height: 24px; } }
+  .top-bar__icon--menu {
+    transform: translateX(50%); }
+
+.how-to-buy {
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr); }
+  @media (min-width: 750px) {
+    .how-to-buy {
+      --columns: 6;
+      column-gap: 24px; } }
+  @media (min-width: 1260px) {
+    .how-to-buy {
+      --columns: 12; } }
+  .how-to-buy__content {
+    grid-column: 1 / -1; }
+    @media (min-width: 750px) {
+      .how-to-buy__content {
+        grid-column: 4 / 7; } }
+    @media (min-width: 1260px) {
+      .how-to-buy__content {
+        grid-column: 6 / 10; } }
+  .how-to-buy__title {
+    grid-column: 1 / -1; }
+    @media (min-width: 750px) {
+      .how-to-buy__title {
+        grid-column: 1 / 4; } }
+    @media (min-width: 1260px) {
+      .how-to-buy__title {
+        grid-column: 1 / 5; } }
+  .how-to-buy__benefits {
+    display: grid;
+    row-gap: 16px;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    list-style: none;
+    font-weight: bolder; }
+  .how-to-buy__description {
+    margin: 0;
+    line-height: 27px;
+    font-weight: 100; }
+
+.categories__wrappper {
+  display: grid;
+  row-gap: 40px; }
+  @media (min-width: 750px) {
+    .categories__wrappper {
+      row-gap: 64px; } }
+
+.category__photos {
+  --columns: 2;
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  margin-bottom: 16px; }
+  @media (min-width: 750px) {
+    .category__photos {
+      --columns: 6;
+      column-gap: 24px; } }
+  @media (min-width: 1260px) {
+    .category__photos {
+      --columns: 12; } }
+
+.category__link {
+  position: relative; }
+  @media (min-width: 750px) {
+    .category__link--wide {
+      grid-column: span 4; } }
+  @media (min-width: 1260px) {
+    .category__link--wide {
+      grid-column: span 8; } }
+  .category__link--square {
+    height: 0;
+    padding-bottom: 100%; }
+    @media (min-width: 750px) {
+      .category__link--square {
+        grid-column: span 2; } }
+    @media (min-width: 1260px) {
+      .category__link--square {
+        grid-column: span 4; } }
+
+.category__photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.category__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%; }
+
+
+/*# sourceMappingURL=/main.48b3db1d.css.map */
